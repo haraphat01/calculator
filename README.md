@@ -6,7 +6,8 @@ This is a model of micro-reddit that was created in ruby on rails with no UI
 
 - React
 
-## Getting Started
+## Live link
+https://glacial-citadel-87315.herokuapp.com/
 
 To get a local copy of the repository please run the following commands on your terminal:
 

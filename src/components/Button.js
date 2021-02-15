@@ -4,7 +4,7 @@ function Button(props) {
   const { name } = props;
   return (
     <>
-      <button type="button">{name}</button>
+      <button type="button" className="btn">{name}</button>
     </>
   );
 }

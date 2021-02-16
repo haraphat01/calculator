@@ -2,8 +2,32 @@
   text-align: center;
 }
 
-.group1 {
+button {
+  background-color: navy;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 10%;
+  height: 75px;
+}
+
+button:hover {
+  background-color: burlywood;
+}
+
+
+#root :first-child {
+  text-align: center;
+}
+
+.Display {
+  height: 100px;
+  background-color: rgb(146, 145, 145);
+  width: 40%;
+  margin: 0 auto;
+  color: beige;
+  font-weight: 900;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
-  margin-left: 20px;
+  align-items: center;
 }

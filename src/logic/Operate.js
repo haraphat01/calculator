@@ -12,19 +12,16 @@ function Operate(numberOne = null, numberTwo = null, operation) {
     } else if (operation === 'X') {
       result = new Big(numberOne).times(new Big(numberTwo));
     } else if (operation === '/') {
-      try {
-        result = new Big(numberOne).div(new Big(numberTwo));
-      } catch (error) {
-        return 'Infinity';
-      }
-    } else if (operation === '%') {
-      if (numberOne) {
-        result = new Big(numberOne).div(100);
-      } else {
-        result = new Big(numberTwo).div(100);
-      }
+      result = new Big(numberOne).div(new Big(numberTwo));
+    }
+  } else if (operation === '%') {
+    if (numberOne) {
+      result = new Big(numberOne).div(100);
+    } else {
+      result = new Big(numberTwo).div(100);
     }
   }
+
   return result.toString();
 }
 export default Operate;

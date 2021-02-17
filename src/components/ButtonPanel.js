@@ -20,7 +20,7 @@ function ButtonPanel(props) {
         ))}
       </div>
 
-      <div className="group2">
+      <div className="group1">
         {group2.map(element => (
           <Button
             name={element}
@@ -30,7 +30,7 @@ function ButtonPanel(props) {
         ))}
       </div>
 
-      <div className="group3">
+      <div className="group1">
         {group3.map(element => (
           <Button
             name={element}
@@ -40,7 +40,7 @@ function ButtonPanel(props) {
         ))}
       </div>
 
-      <div className="group4">
+      <div className="group1">
         {group4.map(element => (
           <Button
             name={element}
@@ -50,7 +50,7 @@ function ButtonPanel(props) {
         ))}
       </div>
 
-      <div className="group5">
+      <div className="group1">
         {group5.map(element => (
           <Button
             name={element}

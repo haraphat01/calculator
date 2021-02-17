@@ -1,35 +1,78 @@
 import Operate from './Operate';
 
 function Calculate(calculatorObj, buttonName) {
-  let { total = 0, next, operation } = calculatorObj;
-  const operations = ['+', '-', 'X', '/', '%'];
-  operation = buttonName;
-  if (operations.includes(buttonName)) {
-    total = Operate(total, next, buttonName);
-    return total;
-  }
+  const { total = 0, next, operation } = calculatorObj;
+  let ans;
   if (buttonName === '+/-') {
-    if (total) {
-      total = Operate(total, -1, 'X');
-    } else if (next) {
-      next = Operate(next, -1, 'X');
+    if (!operation) {
+      return {
+        ...calculatorObj,
+        total: `${total * -1}`,
+        operation: buttonName,
+      };
     }
-    return { total, next, operation };
+
+    return {
+      ...calculatorObj,
+      total: `${total * -1}`,
+      next: `${next * -1}`,
+      operation: buttonName,
+    };
   }
 
   if (buttonName === '=') {
-    total = Operate(total, next, buttonName);
-    next = null;
-    return total;
+    ans = Operate(total, next, operation);
+    return {
+      ...calculatorObj,
+      total: ans,
+      next: null,
+      operation: null,
+    };
   }
+
   if (buttonName === 'AC') {
-    total = null;
-    next = null;
+    return {
+      ...calculatorObj,
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
+
+  if (/[%/X+-]/.test(buttonName)) {
+    return {
+      ...calculatorObj,
+      operation: buttonName,
+    };
+  }
+
+  if (/\d/.test(buttonName)) {
+    if (operation === null) {
+      return {
+        ...calculatorObj,
+        total: total === null ? buttonName : total + buttonName,
+      };
+    }
+    return {
+      ...calculatorObj,
+      next: next === null ? buttonName : next + buttonName,
+    };
+  }
+
   if (buttonName === '.') {
-    next = next.concat(buttonName);
+    if (operation === null) {
+      return {
+        ...calculatorObj,
+        total: total === null ? buttonName : total + buttonName,
+      };
+    }
+    return {
+      ...calculatorObj,
+      next: next === null ? buttonName : next + buttonName,
+    };
   }
-  return { calculatorObj };
+
+  return calculatorObj;
 }
 
 export default Calculate;

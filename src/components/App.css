@@ -20,8 +20,7 @@ button:hover {
 }
 
 .Display {
-  height: 100px;
-  background-color: rgb(146, 145, 145);
+ background-color: pink;
   width: 40%;
   margin: 0 auto;
   color: beige;
@@ -30,4 +29,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  
 }

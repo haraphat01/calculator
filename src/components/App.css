@@ -14,13 +14,12 @@ button:hover {
   background-color: burlywood;
 }
 
-
 #root :first-child {
   text-align: center;
 }
 
 .Display {
- background-color: pink;
+  background-color: pink;
   width: 40%;
   margin: 0 auto;
   color: beige;
@@ -32,5 +31,4 @@ button:hover {
   border-radius: 10px;
   margin-bottom: 2em;
   margin-top: 2em;
-  
 }

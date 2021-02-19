@@ -1,6 +1,6 @@
 import Button from './Button';
 
-function ButtonPanel() {
+const ButtonPanel = () => {
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'X'];
   const group3 = ['4', '5', '6', '-'];
@@ -34,5 +34,5 @@ function ButtonPanel() {
       </div>
     </>
   );
-}
+};
 export default ButtonPanel;

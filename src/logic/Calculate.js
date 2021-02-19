@@ -1,6 +1,6 @@
 import Operate from './Operate';
 
-function Calculate(calculatorObj, buttonName) {
+const Calculate = (calculatorObj, buttonName) => {
   let { total = 0, next, operation } = calculatorObj;
   const operations = ['+', '-', 'X', '/', '%'];
   operation = buttonName;
@@ -30,6 +30,6 @@ function Calculate(calculatorObj, buttonName) {
     next = next.concat(buttonName);
   }
   return { calculatorObj };
-}
+};
 
 export default Calculate;

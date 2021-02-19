@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-function Operate(numberOne = null, numberTwo = null, operation) {
+const Operate = (numberOne = null, numberTwo = null, operation) => {
   const operations = ['+', '-', 'X', '/', '%'];
   let result = Infinity;
   if (operations.includes(operation)) {
@@ -19,5 +19,5 @@ function Operate(numberOne = null, numberTwo = null, operation) {
     return result;
   }
   return result;
-}
+};
 export default Operate;

@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+button {
+  background-color: navy;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 10%;
+  height: 75px;
+}
+
+button:hover {
+  background-color: burlywood;
+}
+
+#root :first-child {
+  text-align: center;
+}
+
+.Display {
+  background-color: pink;
+  width: 40%;
+  margin: 0 auto;
+  color: beige;
+  font-weight: 900;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.calculator {
+  display: flex;
+  align-items: space-around;
+}

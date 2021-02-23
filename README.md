@@ -1,13 +1,12 @@
 # Calculator
-
-This is a model of micro-reddit that was created in ruby on rails with no UI
+This is a calculator that was created with React.
 
 ## Built With
 
 - React
 
 ## Live link
-https://glacial-citadel-87315.herokuapp.com/
+https://kalculator0.herokuapp.com/
 
 To get a local copy of the repository please run the following commands on your terminal:
 

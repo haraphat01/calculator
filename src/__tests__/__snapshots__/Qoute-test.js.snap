@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home 
+    </a>
+    <a
+      href="/App"
+      onClick={[Function]}
+    >
+      Calculator 
+    </a>
+    <a
+      href="/Quote"
+      onClick={[Function]}
+    >
+      Quote 
+    </a>
+  </div>,
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    De te fabula narratur!
+  </h1>,
+]
+`;

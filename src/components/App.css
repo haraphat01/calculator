@@ -32,7 +32,8 @@ button:hover {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+
 .calculator {
   display: flex;
-  align-items: space-around;
+  align-items: flex-start;
 }
